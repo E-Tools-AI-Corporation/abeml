@@ -1,0 +1,37 @@
+Abe M/L (abeml) — Proprietary Software License
+
+Copyright (c) 2026 E-Tools AI Corporation. All rights reserved.
+
+abeml is commercial, proprietary software. It is licensed, not sold, and its use
+is governed by the Abe M/L Compiler End User License Agreement (the "EULA"),
+provided in this repository as EULA.md and Abeml-Compiler-EULA.pdf (the PDF is the
+controlling version). THIS IS NOT OPEN-SOURCE SOFTWARE.
+
+Summary — the EULA controls in all cases:
+
+1. EVALUATION. A downloaded build runs in a time-limited evaluation mode and
+   prints an "UNLICENSED EVALUATION" notice. Continued or production use requires
+   a valid license key issued by E-Tools AI Corporation.
+
+2. NO SOURCE. The compiler's source code is not distributed here, and no rights
+   in it are granted. You may not reverse engineer, decompile, disassemble, or
+   circumvent, disable, or interfere with license enforcement.
+
+3. NO REDISTRIBUTION. You may not redistribute, resell, rent, lease, sublicense,
+   or host the abeml build except as the EULA expressly permits.
+
+4. RUNTIME. The full Abe runtime that ships with abeml (Level 1 + 2 / ML) is
+   commercial and governed by the EULA. It is NOT covered by the Abe Runtime
+   Redistribution License (ARRL); the ARRL applies only to the free Level-1
+   runtime shipped with the free `abepro` edition.
+
+5. YOUR PROGRAMS. Programs you write and compile with abeml are yours; this
+   license places no ownership claim on them.
+
+6. TRADEMARKS. Trademarks are addressed separately in TRADEMARK.md and are not
+   licensed here.
+
+7. NO WARRANTY. The software is provided "AS IS", without warranty of any kind, to
+   the maximum extent permitted by law, as set out in the EULA.
+
+To obtain a license or request an extended evaluation: licensing@e-tools.ai
