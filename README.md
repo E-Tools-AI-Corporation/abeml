@@ -36,17 +36,24 @@ adds Level 2 (machine learning) and the full runtime.
 
 ## Evaluation quick start
 
+Download the **bundle** — it contains the compiler *and* the full runtime it
+links, so native compilation works out of the box:
+
 ```bash
-# Download the latest Linux x86-64 evaluation build
-curl -fsSL -o abeml \
-  https://github.com/E-Tools-AI-Corporation/abeml/releases/latest/download/abeml-linux-x86_64
-chmod +x abeml
-./abeml --version
+# Download + unpack the evaluation bundle (compiler + full runtime)
+curl -fsSL -O https://github.com/E-Tools-AI-Corporation/abeml/releases/latest/download/abeml-1.0.0-linux-x86_64.tar.gz
+tar xzf abeml-1.0.0-linux-x86_64.tar.gz
+cd abeml-1.0.0
+./bin/abeml --version
 
 printf 'function main(): i64 { console.log("Hello from Abe M/L"); return 0; }\n' > hello.abe
-./abeml hello.abe -o hello   # needs clang + llc on PATH
+./bin/abeml hello.abe -o hello   # needs clang + llc on PATH; runtime auto-found in ./runtime
 ./hello
 ```
+
+> **Note:** the standalone **bare** binary (`abeml-linux-x86_64`) has no runtime
+> beside it, so native `-o` compilation needs the runtime — use the bundle, or
+> set `ABE_RUNTIME_DIR=<path>/runtime`.
 
 Unlicensed, `abeml` compiles during the evaluation window and prints an
 `UNLICENSED EVALUATION` banner; after the window it requires a license. See
